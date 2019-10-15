@@ -1,7 +1,11 @@
 const crypto = require("crypto")
 function peseudohachage(chaine){
      condensat=0
-    for(let i=0;i< chaine.length;i++){
+    for(let i=0;i< chaine.length;i++){for(let i=0;i< chaine.length;i++){
+        
+        condensat =(condensat + c.charCodeAt(i)* 100**(i+1)) % (2**256)  
+     }
+    
         
         condensat =(condensat + c.charCodeAt(i)* 100**(i+1)) % (2**256)  
      }
